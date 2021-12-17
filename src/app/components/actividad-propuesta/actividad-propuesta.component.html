@@ -1,0 +1,82 @@
+<div *ngIf="!developApp" style="width: 50%; margin: auto">
+  <div
+    style="height: 0; padding-bottom: 56.25%; position: relative; width: 100%"
+  >
+    <iframe
+      allowfullscreen=""
+      frameBorder="0"
+      height="100%"
+      src="https://giphy.com/embed/MA41p1XHjzXZD25jiq/video"
+      style="left: 0; position: absolute; top: 0"
+      width="100%"
+    ></iframe>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="setDevelopApp()">
+    YESSS!
+  </button>
+</div>
+<div *ngIf="developApp">
+  <div class="row">
+    <i class="bi bi-arrow-left"></i>
+    <h1>Competencia por equipos</h1>
+    <div class="col-md-6">
+      <p style="font-size: medium; font-weight: 600">Objetivo:</p>
+      <p>
+        Desarrollar las habilidades de front necesarias para aumentar la
+        velocidad de desarrollo, universalizar el conocimiento del equipo y
+        adoptar estrategias para alcanzar el incremento en cada iteración
+      </p>
+      <iframe
+        src="https://i.giphy.com/media/JIX9t2j0ZTN9S/giphy.webp"
+        width="480"
+        height="480"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+    <div class="col-md-6">
+      <p style="font-size: medium; font-weight: 600">¿Cómo?</p>
+      <p>
+        Dividiremos a la celula en dos equipos, cada uno se encargará de una
+        tarea, cuyo objetivo de aprendizarje es uno solo. Formularios dinámicos
+      </p>
+      <p style="font-size: medium; font-weight: 600">Equipo 1:</p>
+      <p>
+        Información del cliente: El equipo deberá desarrollar en el modulo
+        "actividad 1 - Información del cliente", un formulario que muestre la
+        información de las compras de un cliente en dos almacenes diferentes que
+        pertenecen a la misma cadena de almacenes. Para lograrlo, el equipo
+        presentará en el front la información que tienen en comun los dos
+        almacenes, tal como: *El documento del cliente, *El nombre, *La
+        dirección de residencia y *El número de contacto.
+      </p>
+      <p>
+        Por otro lado, la información que no es común, deberá ser presentada
+        mediante botones que permitiran pasar entre almacenes. La información
+        allí presentada será: *El total compras por almacen, y *un listado de
+        los ultimos 3 productos comprados
+      </p>
+      <p style="font-size: medium; font-weight: 600">Equipo 2:</p>
+      <p>
+        Información de los autos: El equipo deberá desarrollar en el modulo
+        "actividad 1 - Información de los autos", un formulario que muestre la
+        información del consecionario que vende los autos y el detalle de los
+        autos. Para lograrlo, el equipo presentará en el front la información el
+        consecionario: *El nombre, *la dirección, *el horario de atención y *el
+        número de teléfono. Por otro lado, existirá un botón que nos permitirá
+        cambiar entre dos autos, al dar click se presentará *3 fotos del
+        vehiculo y *el nombre, *número de chasis, *marca y *colores disponibles
+      </p>
+    </div>
+    <h1>Restricciones:</h1>
+    <p>Desarrollar usando angular bootstrap y css</p>
+    <p>
+      Los datos seránz intanciados desde un servicio de angular, allí la
+      información deberá ser almacenada por equipo en una cosntante (hardcode)
+    </p>
+    <p>Debe seguirse la metodologia TDD</p>
+    <p>Toda la información debe ser modelada en clases o interfaces</p>
+    <p>Debe seguirse el manual de buenas practicas</p>
+    <p>Tener en mente la división de responsabilidades en todo momento</p>
+  </div>
+</div>
